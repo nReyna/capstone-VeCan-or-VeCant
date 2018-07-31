@@ -15,9 +15,6 @@ fleshed out and dressed for presentation and are ready for production.
 == === == === == === == === == === == === == === == === == === == === == === ==
 ---
 ### 2. SQL (10 minutes)
-1. [Goal](#-goal-classify-businesses-by-their-review-text)
-1. [Appendix](#-appendix)
-
 
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
@@ -39,6 +36,13 @@ empty text lines to fill page empty text lines to fill page
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
+
+
+[Goal](#-goal-classify-businesses-by-their-review-text)
+[Appendix](#-appendix)
+
+
+
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page
@@ -188,7 +192,7 @@ empty text lines to fill page empty text lines to fill page
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
 
-### Machine Learning Algorithms (60 minutes)
+### 4. Machine Learning Algorithms (60 minutes)
 
 
 empty text lines to fill page empty text lines to fill page 
