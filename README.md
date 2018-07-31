@@ -27,13 +27,10 @@ Figure 1: We see the different classes represented by the food related reviews
 
 
 ### 0. Appendix
-![alt text](/imgs/yelp_dataset_schema.png)
+**Yelp Dataset SQL Tables**
+Here is the table association and structure which can be found [link](https://www.yelp.com/dataset/documentation/sql):
+![Yelp Dataset table relation](/imgs/yelp_dataset_schema.png)
 
-[link](https://www.yelp.com/dataset/documentation/sql)
-
-
-
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page
+In *iteration 1* of this project, we will be looking at the reviews for a small 
+subset of categories of the broader food set. 
 
