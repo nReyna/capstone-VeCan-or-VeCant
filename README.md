@@ -38,8 +38,8 @@ empty text lines to fill page empty text lines to fill page
 empty text lines to fill page empty text lines to fill page 
 
 
-[Goal](#-goal-classify-businesses-by-their-review-text)
-[Appendix](#-appendix)
+[Goal](#6-goal-classify-businesses-by-their-review-text)
+[Appendix](#0-appendix)
 
 
 
@@ -77,7 +77,7 @@ empty text lines to fill page empty text lines to fill page
 empty text lines to fill page empty text lines to fill page 
 
 
-### Goal: classify businesses by their review text. 
+### 6. Goal: classify businesses by their review text. 
 
 In particular, taking Yelp reviews for food establishments can we infer a classification 
 for the type of cuisiine using review text. We start with a collection of 5.2 million 
@@ -133,7 +133,7 @@ empty text lines to fill page empty text lines to fill page
 ### 3. Data Science Questions (45 minutes)
 
 
-### Appendix
+### 0. Appendix
 
 
 empty text lines to fill page empty text lines to fill page 
