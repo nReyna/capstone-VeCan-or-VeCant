@@ -1,83 +1,18 @@
 # Galvanize Capstone - ongoing project 07.31.18
 
-### 1. Python Programming (20 minutes)
-
 This is currently the working repository for my Galvanize capstone project. All
 code and notes on the Exploratory Data Analysis will be held here until they are 
 fleshed out and dressed for presentation and are ready for production. 
 
 
-1. [Python Programming (20 minutes)](#1-python-programming-20-minutes)
-2. [SQL (10 minutes)](#2-sql-10-minutes)
-3. [Data Science Questions (45 minutes)](#3-data-science-questions-45-minutes)
-4. [Machine Learning Algorithms (60 minutes)](#4-machine-learning-algorithms-60-minutes)
+1. [Goal](#1-goal-classify-businesses-by-their-review-text)
+0. [Appendix](#0-appendix)
+
 
 == === == === == === == === == === == === == === == === == === == === == === ==
 ---
-### 2. SQL (10 minutes)
 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-
-
-[Goal](#6-goal-classify-businesses-by-their-review-text)
-[Appendix](#0-appendix)
-
-
-
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-
-
-### 6. Goal: classify businesses by their review text. 
+### 1. Goal: classify businesses by their review text. 
 
 In particular, taking Yelp reviews for food establishments can we infer a classification 
 for the type of cuisiine using review text. We start with a collection of 5.2 million 
@@ -90,135 +25,10 @@ Figure 1: We see the different classes represented by the food related reviews
 
 **Balancing Classes**
 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-
-### 3. Data Science Questions (45 minutes)
-
 
 ### 0. Appendix
 
 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-
-### 4. Machine Learning Algorithms (60 minutes)
-
-
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
