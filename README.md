@@ -8,8 +8,8 @@ fleshed out and dressed for presentation and are ready for production.
 1. [Goal](#1-goal-classify-businesses-by-their-review-text)
 0. [Appendix](#0-appendix)
 
+<!--- == === == === == === == === == === == === == === == === == === == == --->
 
-== === == === == === == === == === == === == === == === == === == === == === ==
 ---
 
 ### 1. Goal: classify businesses by their review text. 
@@ -28,6 +28,7 @@ Figure 1: We see the different classes represented by the food related reviews
 
 ### 0. Appendix
 **Yelp Dataset SQL Tables**
+
 Here is the table association and structure which can be found [link](https://www.yelp.com/dataset/documentation/sql):
 ![Yelp Dataset table relation](/imgs/yelp_dataset_schema.png)
 
