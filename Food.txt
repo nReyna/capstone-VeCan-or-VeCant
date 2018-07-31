@@ -1,4 +1,5 @@
 Vegetarian
+Vegan
 
 American (New)
 Nightlife
@@ -8,16 +9,13 @@ American (Traditional)
 Burgers
 Restaurants
 Italian
-Real Estate Services
-Real Estate
-Home Services
-Property Management
+
 Coffee & Tea
 Ice Cream & Frozen Yogurt
 Food
 Breakfast & Brunch
 Gluten-Free
-Local Services
+
 Bakeries
 Bagels
 French
@@ -49,18 +47,14 @@ British
 Pizza
 Dive Bars
 Lounges
-Venues & Event Spaces
 Imported Food
 Specialty Food
 Thai
 Ethnic Food
 Florists
-Wholesale Stores
 Flowers & Gifts
 Food Court
 Cuban
-Adult Entertainment
-Strip Clubs
 Indian
 Internet Cafes
 Caribbean
@@ -69,7 +63,7 @@ Donuts
 Chicken Wings
 Tacos
 Food Trucks
-Vegan
+
 Wraps
 Sushi Bars
 Wine Bars
@@ -106,21 +100,7 @@ Cannabis Clinics
 Wineries
 Belgian
 
-Photographers
-Session Photography
-Video/Film Production
 Candy Stores
-Steakhouses
-Solar Installation
-Reflexology
-Computers
-Electronics
-Shopping Centers
-Car Stereo Installation
-Videos & Video Game Rental
-Parking
-Paintball
-Airsoft
 Cantonese
 Muay Thai
 Korean
@@ -135,8 +115,6 @@ Halal
 Chicken Shop
 Ethical Grocery
 
-Social Clubs
-Casinos
 
 Wine Tours
 Walking Tours
@@ -425,7 +403,7 @@ Pub Food
 Themed Cafes
 Baguettes
 Wok
-Cannabis Tours
+
 Parent Cafes
 Hong Kong Style Cafe
 Agriturismi
@@ -454,4 +432,8 @@ Rotisserie Chicken
 Minho
 Soba
 Signature Cuisine
+
 Cannabis Collective
+Social Clubs
+Casinos
+Cannabis Tours
