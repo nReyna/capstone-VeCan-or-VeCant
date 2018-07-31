@@ -1,0 +1,45 @@
+mysql> select distinct name from attribute;
++----------------------------+
+| name                       |
++----------------------------+
+| AcceptsInsurance           |
+| ByAppointmentOnly          |
+| BusinessAcceptsCreditCards |
+| BusinessParking            |
+| HairSpecializesIn          |
+| RestaurantsPriceRange2     |
+| GoodForKids                |
+| WheelchairAccessible       |
+| BikeParking                |
+| Alcohol                    |
+| HasTV                      |
+| NoiseLevel                 |
+| RestaurantsAttire          |
+| Music                      |
+| Ambience                   |
+| RestaurantsGoodForGroups   |
+| Caters                     |
+| WiFi                       |
+| RestaurantsReservations    |
+| RestaurantsTakeOut         |
+| HappyHour                  |
+| GoodForDancing             |
+| RestaurantsTableService    |
+| OutdoorSeating             |
+| RestaurantsDelivery        |
+| BestNights                 |
+| GoodForMeal                |
+| CoatCheck                  |
+| Smoking                    |
+| DriveThru                  |
+| DogsAllowed                |
+| BusinessAcceptsBitcoin     |
+| Open24Hours                |
+| BYOBCorkage                |
+| BYOB                       |
+| Corkage                    |
+| DietaryRestrictions        |
+| AgesAllowed                |
+| RestaurantsCounterService  |
++----------------------------+
+39 rows in set (1.61 sec)
