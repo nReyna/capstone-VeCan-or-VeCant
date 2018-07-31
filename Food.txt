@@ -1,14 +1,22 @@
+Mexican
+Chinese
+Indian
 Vegetarian
 Vegan
+
+
+Italian
+Tex-Mex
+Burgers
 
 American (New)
 Nightlife
 Bars
 Sandwiches
 American (Traditional)
-Burgers
+
 Restaurants
-Italian
+
 
 Coffee & Tea
 Ice Cream & Frozen Yogurt
@@ -21,7 +29,7 @@ Bagels
 French
 Sports Bars
 Tiki Bars
-Mexican
+
 Tea Rooms
 Soup
 Salad
@@ -40,7 +48,7 @@ Desserts
 Seafood
 Fast Food
 Barbeque
-Chinese
+
 Cafes
 Diners
 British
@@ -55,7 +63,7 @@ Florists
 Flowers & Gifts
 Food Court
 Cuban
-Indian
+
 Internet Cafes
 Caribbean
 Canadian (New)
@@ -83,7 +91,7 @@ Delicatessen
 Septic Services
 Local Flavor
 Sugar Shacks
-Tex-Mex
+
 Greek
 Ramen
 Bubble Tea

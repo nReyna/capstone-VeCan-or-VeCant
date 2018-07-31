@@ -1,0 +1,16 @@
+
+
+def whereCondition(filename):
+    where = '(\"'
+
+    with open(filename) as f:
+        for i in range(4):
+            where +=  f.readline().strip() + '\", \"'
+
+    # drop (comma, space, quote)
+    where = where[:-3]
+
+    # close off our conditional
+    where += ")"
+
+return where
