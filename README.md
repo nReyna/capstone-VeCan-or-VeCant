@@ -27,8 +27,13 @@ Figure 1: We see the different classes represented by the food related reviews
 
 
 ### 0. Appendix
+![alt text](/imgs/yelp_dataset_schema.png)
+
+[link](https://www.yelp.com/dataset/documentation/sql)
 
 
+
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
-empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page
+
