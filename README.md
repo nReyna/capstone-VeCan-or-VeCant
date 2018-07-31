@@ -187,3 +187,34 @@ empty text lines to fill page empty text lines to fill page
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
 empty text lines to fill page empty text lines to fill page 
+
+### Machine Learning Algorithms (60 minutes)
+
+
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
+empty text lines to fill page empty text lines to fill page 
