@@ -19,11 +19,29 @@ SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city,
 INNER JOIN business b ON r.business_id = b.id 
 INNER JOIN category c ON c.business_id = b.id
 WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan");
+
 ## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 
+CREATE TABLE 
+IF NOT EXISTS fiveTab AS (
+SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
+);
 
+SELECT 
+    *
+FROM
+    vegTab
+INTO OUTFILE '/var/lib/mysql-files/fiveTab.csv' 
+FIELDS ENCLOSED BY '"' 
+TERMINATED BY ';' 
+ESCAPED BY '"' 
+LINES TERMINATED BY '\r\n';
 
+sudo mv /var/lib/mysql-files/fiveTab.csv .
 
 ## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
