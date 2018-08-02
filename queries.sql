@@ -34,14 +34,29 @@ WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
 SELECT 
     *
 FROM
-    vegTab
+    fiveTab
 INTO OUTFILE '/var/lib/mysql-files/fiveTab.csv' 
 FIELDS ENCLOSED BY '"' 
 TERMINATED BY ';' 
 ESCAPED BY '"' 
 LINES TERMINATED BY '\r\n';
 
+TABLE DUMP:
+Query OK, 739148 rows affected (4.40 sec)
+
+
 sudo mv /var/lib/mysql-files/fiveTab.csv .
+
+
+SELECT 
+    *
+FROM
+    fiveTab
+INTO OUTFILE '/var/lib/mysql-files/fiveTab.csv' 
+FIELDS ENCLOSED BY '"' 
+TERMINATED BY ';' 
+ESCAPED BY '"' 
+LINES TERMINATED BY '\r\n';
 
 ## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
