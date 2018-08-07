@@ -3,17 +3,22 @@ SELECT * FROM review r LIMIT 3;
 
 SELECT c.id FROM category c LIMIT 3;
 
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 SELECT r.id, r.stars, b.name, c.category FROM review r
 INNER JOIN business b ON r.business_id = b.id 
 INNER JOIN category c ON c.business_id = b.id
 LIMIT 3;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 SELECT r.id, r.stars, b.name, c.category FROM review r
 INNER JOIN business b ON r.business_id = b.id 
 INNER JOIN category c ON c.business_id = b.id
 WHERE c.category in ("Chinese", "Mexican")
 LIMIT 3;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
 INNER JOIN business b ON r.business_id = b.id 
@@ -99,7 +104,11 @@ INNER JOIN business b ON r.business_id = b.id
 INNER JOIN category c ON c.business_id = b.id
 WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan") LIMIT 3);
 
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
 SELECT * FROM INFORMATION_SCHEMA.INNODB_TEMP_TABLE_INFO\G
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 SELECT count(1) FROM review;
 +----------+
@@ -110,9 +119,15 @@ SELECT count(1) FROM review;
 1 row in set (3.36 sec)
 
 ## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
 mysql> SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
     -> INNER JOIN business b ON r.business_id = b.id
     -> INNER JOIN category c ON c.business_id = b.id
     -> WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
     -> AND b.state in ("CA");
 Empty set (0.25 sec)
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+SELECT * FROM category WHERE category LIKE 'American%' LIMIT 3;
+
