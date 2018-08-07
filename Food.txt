@@ -1,20 +1,24 @@
+American (New)
+American (Traditional)
+Italian
 Mexican
 Chinese
 Indian
+
 Vegetarian
 Vegan
 
 
-Italian
+
+
 Tex-Mex
+Japanese
 Burgers
 
-American (New)
+
 Nightlife
 Bars
 Sandwiches
-American (Traditional)
-
 Restaurants
 
 
@@ -42,7 +46,7 @@ Izakaya
 Comfort Food
 Cocktail Bars
 Asian Fusion
-Japanese
+
 Tapas/Small Plates
 Desserts
 Seafood

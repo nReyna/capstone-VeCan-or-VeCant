@@ -131,3 +131,27 @@ Empty set (0.25 sec)
 
 SELECT * FROM category WHERE category LIKE 'American%' LIMIT 3;
 
+SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category LIKE ("American%") OR c.category in ("Italian", "Mexican", "Chinese", "Indian") LIMIT 30;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+
+
+CREATE TABLE 
+IF NOT EXISTS fiveCat AS (
+SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category LIKE ("American%") OR c.category in ("Italian", "Mexican", "Chinese", "Indian") );
+
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+
+SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, 
+    b.name, b.city, b.state, c.category FROM review r 
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id WHERE c.category in ("American%") LIMIT 3;
