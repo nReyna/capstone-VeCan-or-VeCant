@@ -63,6 +63,12 @@ TERMINATED BY ';'
 ESCAPED BY '"' 
 LINES TERMINATED BY '\r\n';
 
+# Completed 8.1.18
+df.to_pickle("fiveCats.pkl")
+
+# Completed 8.8.18 5:04pm
+df.to_pickle("fiveCats_US.pkl")
+
 ## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 SELECT 
@@ -147,6 +153,12 @@ INNER JOIN business b ON r.business_id = b.id
 INNER JOIN category c ON c.business_id = b.id
 WHERE c.category LIKE ("American%") OR c.category in ("Italian", "Mexican", "Chinese", "Indian") );
 
+Query OK, 1892465 rows affected (5 hours 22 min 46.88 sec)
+Records: 1892465  Duplicates: 0  Warnings: 0
+
+# only US
+# Completed 8.7.18 5:01pm
+df.to_pickle("fiveCuisine.pkl")
 
 ## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
@@ -155,3 +167,5 @@ SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool,
     b.name, b.city, b.state, c.category FROM review r 
 INNER JOIN business b ON r.business_id = b.id 
 INNER JOIN category c ON c.business_id = b.id WHERE c.category in ("American%") LIMIT 3;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
