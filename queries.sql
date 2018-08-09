@@ -386,3 +386,59 @@ INNER JOIN category c ON c.business_id = b.id
 WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
 AND b.state NOT IN ("EDH", "ON", "QC")
 LIMIT 10;
+
+SELECT business_id, category, SUM(category = "Vegan") as bigv
+FROM catMap 
+GROUP BY business_id
+LIMIT 10;
+
+
+SELECT * FROM catMap LIMIT 10;
+
+SELECT
+DISTINCT category,
+business_id,
+if(category="Vegan" OR category="Vegetarian", 1, 0) as Veggie
+FROM catMap 
+ORDER BY business_id
+LIMIT 40;
+
+
+
+SELECT 
+    x.business_id, 
+    SUM(x.category = "Vegan") as Vegan, 
+    SUM(x.category= "Indian") as Indian,
+    SUM(x.category= "Mexican") as Mexican
+FROM (
+SELECT
+DISTINCT category,
+business_id,
+if(category="Vegan" OR category="Vegetarian", 1, 0) as Veggie
+FROM catMap 
+ORDER BY business_id
+LIMIT 40 ) x
+GROUP BY x.business_id;
+
+SELECT 
+    x.business_id,
+    SUM( (x.category = "Vegetarian") OR (x.category = "Vegan")) as vegFriendly,
+    SUM(x.category = "Vegan") as Vegan, 
+    SUM(x.category = "Vegetarian") as Vegetarian,
+    SUM(x.category = "Thai") as Thai,
+    SUM(x.category = "Italian") as Italian,
+    SUM(x.category = "Indian") as Indian,
+    SUM(x.category = "Chinese") as Chinese,
+    SUM(x.category = "Mexican") as Mexican
+FROM (
+SELECT
+DISTINCT category,
+business_id
+FROM catMap 
+ORDER BY business_id) x
+GROUP BY x.business_id
+LIMIT 35;
+
+("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+
+SELECT * FROM largeRevTable LIMIT 10;
