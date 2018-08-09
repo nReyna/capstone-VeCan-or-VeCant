@@ -4,6 +4,7 @@ Italian
 Mexican
 Chinese
 Indian
+Thai
 
 Vegetarian
 Vegan
@@ -61,7 +62,7 @@ Dive Bars
 Lounges
 Imported Food
 Specialty Food
-Thai
+
 Ethnic Food
 Florists
 Flowers & Gifts

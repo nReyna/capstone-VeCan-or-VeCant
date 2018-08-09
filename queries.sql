@@ -539,6 +539,8 @@ IF NOT EXISTS small_reviewCategories AS (
 
 DROP TABLE small_reviewCategories;
 
+Ran 8.9.18 1105am
+
 CREATE TABLE 
 IF NOT EXISTS reviewCategories AS (
     SELECT
@@ -553,3 +555,12 @@ IF NOT EXISTS reviewCategories AS (
     FROM binaryCols b
     INNER JOIN largeRevTable r ON b.business_id = r.business_id
 );
+
+Query OK, 932959 rows affected (20 min 35.04 sec)
+Records: 932959  Duplicates: 0  Warnings: 0
+
+('NV', 'WI', 'AZ', 'SC','NC', 'OH', 'PA', 'IL');
+('AZ', 'WI', 'NV', 'NC', 'PA', 'OH', 'IL',  'SC', 'NY')
+'BW', 'CHE', 'NYK',
+       'ST', 'WLN', 'ELN',  'MLN', '01', 'HLD', 'FIF', 'WHT', 'PKN',
+       'NI', 'C', 'ESX']
