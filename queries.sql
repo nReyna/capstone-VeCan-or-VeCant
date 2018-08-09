@@ -442,3 +442,114 @@ LIMIT 35;
 ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
 
 SELECT * FROM largeRevTable LIMIT 10;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+Ran 8.9.18 1035am
+
+CREATE TABLE 
+IF NOT EXISTS binaryCols AS (
+SELECT 
+    x.business_id,
+    SUM( (x.category = "Vegetarian") OR (x.category = "Vegan")) as vegFriendly,
+    SUM(x.category = "Vegan") as Vegan, 
+    SUM(x.category = "Vegetarian") as Vegetarian,
+    SUM(x.category = "Thai") as Thai,
+    SUM(x.category = "Italian") as Italian,
+    SUM(x.category = "Indian") as Indian,
+    SUM(x.category = "Chinese") as Chinese,
+    SUM(x.category = "Mexican") as Mexican
+FROM (
+    SELECT
+    DISTINCT c.category, c.business_id
+    FROM catMap c) x
+GROUP BY x.business_id
+);
+
+Query OK, 10251 rows affected (1.95 sec)
+Records: 10251  Duplicates: 0  Warnings: 0
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+SELECT * FROM largeRevTable LIMIT 3;
+SELECT * FROM binaryCols LIMIT 10;
+
+SELECT *
+FROM binaryCols b
+INNER JOIN largeRevTable r ON b.business_id = r.business_id
+LIMIT 10;
+
+
+
+b.business_id, r.name, r.review_id, 
+r.stars, r.date, 
+r.text, 
+r.useful, r.funny, r.cool, 
+r.city, r.state, 
+b.vegFriendly, b.Vegan,
+b.Vegetarian, b.Thai, b.Italian, 
+b.Indian, b.Chinese, b.Mexican,
+
+
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+SELECT
+    b.business_id, r.name, r.review_id, 
+    r.stars, r.date, 
+    r.text, 
+    r.useful, r.funny, r.cool, 
+    r.city, r.state, 
+    b.vegFriendly, b.Vegan,
+    b.Vegetarian, b.Thai, b.Italian, 
+    b.Indian, b.Chinese, b.Mexican
+FROM binaryCols b
+INNER JOIN largeRevTable r ON b.business_id = r.business_id
+LIMIT 20;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+
+business_id: 3p4M5be6uc1S78TO62gmOg
+       name: Dominick's Steakhouse
+  review_id: -0R8RmGtMmQmy479ltbG0Q
+      stars: 5
+       date: 2016-11-06 00:00:00
+       text: Gorgeous interior, friendly and helpful staff, and great food!  I'm a vegetarian and found great options here( the beet salad was incredible ).  My husband loved his steak and we will definitely be back when wereturn to Scottsdale in the spring. Thanks for a great evening!  Do you ever have live music?
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+Ran 8.9.18 1035am
+
+CREATE TABLE 
+IF NOT EXISTS small_reviewCategories AS (
+    SELECT
+        b.business_id, r.name, r.review_id, 
+        r.stars, r.date, 
+        r.text, 
+        r.useful, r.funny, r.cool, 
+        r.city, r.state, 
+        b.vegFriendly, b.Vegan,
+        b.Vegetarian, b.Thai, b.Italian, 
+        b.Indian, b.Chinese, b.Mexican
+    FROM binaryCols b
+    INNER JOIN largeRevTable r ON b.business_id = r.business_id
+    LIMIT 300
+);
+
+DROP TABLE small_reviewCategories;
+
+CREATE TABLE 
+IF NOT EXISTS reviewCategories AS (
+    SELECT
+        b.business_id, r.name, r.review_id, 
+        r.stars, r.date, 
+        r.text, 
+        r.useful, r.funny, r.cool, 
+        r.city, r.state, 
+        b.vegFriendly, b.Vegan,
+        b.Vegetarian, b.Thai, b.Italian, 
+        b.Indian, b.Chinese, b.Mexican
+    FROM binaryCols b
+    INNER JOIN largeRevTable r ON b.business_id = r.business_id
+);
