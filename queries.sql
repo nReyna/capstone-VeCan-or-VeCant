@@ -169,3 +169,220 @@ INNER JOIN business b ON r.business_id = b.id
 INNER JOIN category c ON c.business_id = b.id WHERE c.category in ("American%") LIMIT 3;
 
 ## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+mysql> select count(1) from vegTab;
++----------+
+| count(1) |
++----------+
+|      500 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select count(1) from fiveCat;
++----------+
+| count(1) |
++----------+
+|  1892465 |
++----------+
+1 row in set (2.10 sec)
+
+mysql> select count(1) from fiveTab;
++----------+
+| count(1) |
++----------+
+|   739148 |
++----------+
+1 row in set (0.80 sec)
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+CREATE TABLE 
+IF NOT EXISTS vegTab AS (
+    SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
+    INNER JOIN business b ON r.business_id = b.id 
+    INNER JOIN category c ON c.business_id = b.id
+    WHERE c.category in ("Vegan") 
+    LIMIT 500
+);
+
+SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Vegan") 
+LIMIT 500;
+
+ f.id AS review_id, 
+SELECT DISTINCT c.category,b.id AS business_id FROM fiveTab f
+INNER JOIN review r   ON f.id = r.id 
+INNER JOIN business b ON b.id = r.business_id
+INNER JOIN category c ON b.id = c.business_id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
+LIMIT 50;
+
+
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+CREATE TABLE 
+IF NOT EXISTS largerTable AS (
+SELECT r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state, c.category FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+);
+
+SELECT DISTINCT c.category, b.id, r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+LIMIT 10;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+
+
+SELECT DISTINCT c.category, b.id AS business_id FROM fiveTab f
+INNER JOIN review r   ON f.id = r.id 
+INNER JOIN business b ON b.id = r.business_id
+INNER JOIN category c ON b.id = c.business_id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
+LIMIT 50;
+
+
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+SELECT DISTINCT c.category, b.id AS business_id, if(c.category="Vegan" OR c.category="Vegetarian", 1, 0) as Veggie
+FROM fiveTab f
+INNER JOIN review r   ON f.id = r.id 
+INNER JOIN business b ON b.id = r.business_id
+INNER JOIN category c ON b.id = c.business_id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
+LIMIT 20;
+
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+SELECT DISTINCT x.business_id, if(x.category="Vegan" OR x.category="Vegetarian", 1, 0) as Veggie
+FROM (
+SELECT DISTINCT c.category, b.id AS business_id
+FROM fiveTab f
+INNER JOIN review r   ON f.id = r.id 
+INNER JOIN business b ON b.id = r.business_id
+INNER JOIN category c ON b.id = c.business_id
+WHERE c.category in ("Mexican", "Chinese", "Indian")
+LIMIT 20) x
+LIMIT 12;
+
+
+
+SELECT business_id SUM(category) as whuh
+FROM foo
+GROUP BY business_id;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+SELECT DISTINCT c.category, b.id AS business_id, if(c.category="Vegan" OR c.category="Vegetarian", 1, 0) as Veggie
+FROM fiveTab f
+INNER JOIN review r   ON f.id = r.id 
+INNER JOIN business b ON b.id = r.business_id
+INNER JOIN category c ON b.id = c.business_id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
+LIMIT 20;
+
+mysql> SELECT business_id, SUM(category = "Vegan") as bigv, SUM(category= "Indian") as iindi FROM foo GROUP BY business_id;
+
+
+SELECT DISTINCT c.category, b.id, r.id, r.stars, r.date, r.text, r.useful, r.funny, r.cool, b.name, b.city, b.state FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+LIMIT 20;
+
+
+SELECT DISTINCT c.category, b.id AS business_id, r.id AS review_id, b.state FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+LIMIT 20;
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+
+CREATE TABLE 
+IF NOT EXISTS catMap AS (
+SELECT DISTINCT c.category, b.id AS business_id, r.id AS review_id, b.state FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+AND b.state NOT IN ("EDH", "ON", "QC")
+);
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+
+
+CREATE TABLE 
+IF NOT EXISTS largeRevTable AS (
+SELECT DISTINCT r.id AS review_id, b.id AS business_id, c.category, r.stars, r.date, r.text, 
+r.useful, r.funny, r.cool, b.name, b.city, b.state FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+AND b.state NOT IN ("EDH", "ON", "QC")
+);
+
+ran 8.8.18 10pm
+
+mysql> CREATE TABLE
+    -> IF NOT EXISTS largeRevTable AS (
+    -> SELECT DISTINCT r.id AS review_id, b.id AS business_id, c.category, r.stars, r.date, r.text,
+    -> r.useful, r.funny, r.cool, b.name, b.city, b.state FROM review r
+    -> INNER JOIN business b ON r.business_id = b.id
+    -> INNER JOIN category c ON c.business_id = b.id
+    -> WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+    -> AND b.state NOT IN ("EDH", "ON", "QC")
+    -> );
+Query OK, 932959 rows affected (2 hours 12 min 0.69 sec)
+Records: 932959  Duplicates: 0  Warnings: 0
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+ran 8.9.18 7am
+
+mysql> CREATE TABLE
+    -> IF NOT EXISTS catMap AS (
+    -> SELECT DISTINCT c.category, b.id AS business_id, r.id AS review_id, b.state FROM review r
+    -> INNER JOIN business b ON r.business_id = b.id
+    -> INNER JOIN category c ON c.business_id = b.id
+    -> WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+    -> AND b.state NOT IN ("EDH", "ON", "QC")
+    -> );
+
+Query OK, 932959 rows affected (1 hour 51 min 1.21 sec)
+Records: 932959  Duplicates: 0  Warnings: 0
+
+## -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
+
+SELECT DISTINCT c.category, b.id AS business_id, if(c.category="Vegan" OR c.category="Vegetarian", 1, 0) as Veggie
+FROM fiveTab f
+INNER JOIN review r   ON f.id = r.id 
+INNER JOIN business b ON b.id = r.business_id
+INNER JOIN category c ON b.id = c.business_id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Vegetarian", "Vegan")
+LIMIT 20;
+
+SELECT 
+    business_id, 
+    SUM(category = "Vegan") as bigv, 
+    SUM(category= "Indian") as iindi 
+FROM foo 
+GROUP BY business_id;
+
+catMap
+SELECT DISTINCT c.category, b.id AS business_id, r.id AS review_id, b.state FROM review r
+INNER JOIN business b ON r.business_id = b.id 
+INNER JOIN category c ON c.business_id = b.id
+WHERE c.category in ("Mexican", "Chinese", "Indian", "Italian", "Thai", "Vegetarian", "Vegan")
+AND b.state NOT IN ("EDH", "ON", "QC")
+LIMIT 10;

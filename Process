@@ -1,0 +1,21 @@
+select v.id, v.name, c.category from vegTab v inner join category c on v.id=c.business_id limit 3;
+
+
+Proc 1 ===
+1. model takes every listing
+- vegan or not
+based review text
+labeled data
+
+2. Look at false positive
+possible vegan not labeled as vegan (pho 99)
+
+
+Proc 2 ===
+3. based on cuisine
+- vegan or not
+based review text
+labeled data
+
+4. Look at false positive
+possible vegan not labeled as vegan (pho 99)
