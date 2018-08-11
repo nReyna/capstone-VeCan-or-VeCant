@@ -19,3 +19,20 @@ labeled data
 
 4. Look at false positive
 possible vegan not labeled as vegan (pho 99)
+
+
+mask = (predicted == 0)
+val = np.unique( y_test[mask], return_counts=True)
+print(val)
+
+ht  = val[1] / val[1].sum()
+print(ht)
+
+ 
+motivation
+- dinner w/gf
+model
+- what i tried
+result
+obstacles
+future
