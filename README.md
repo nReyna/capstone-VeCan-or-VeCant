@@ -1,9 +1,9 @@
-# Galvanize Capstone - ongoing project 07.31.18
+# Galvanize Capstone: VeCan or VeCan’t 
+08.14.18
 
-This is currently the working repository for my Galvanize capstone project. All
-code and notes on the Exploratory Data Analysis will be held here until they are 
-fleshed out and dressed for presentation and are ready for production. 
-
+This repository holds the most current work for my Galvanize capstone project. All
+code and notes on the Exploratory Data Analysis will be held here to share my findings
+and overcome challenges. Your comments and questions are welcome.
 
 1. [Goal](#1-goal-classify-businesses-by-their-review-text)
 0. [Appendix](#0-appendix)
@@ -12,7 +12,7 @@ fleshed out and dressed for presentation and are ready for production.
 
 ---
 
-### 1. Goal: classify businesses by their review text. 
+### 1. Goal: classify dinning options by their review text to predict if they are Vegan/Vegetarian friendly
 
 In particular, taking Yelp reviews for food establishments can we infer a classification 
 for the type of cuisiine using review text. We start with a collection of 5.2 million 
