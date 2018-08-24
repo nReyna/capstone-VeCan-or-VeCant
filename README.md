@@ -55,8 +55,6 @@ tags on restaurants.
 ![Class Balance for Veggie Friendly restaurants](/imgs/CuisinesFull.png)
 Figure 1: Proportion of Veggie Friendly restaruants given a cuisine.
 
-**Balancing Classes**
-
 <!--- == === == === == === == === Modeling  === == === == === == === == == --->
 
 ### 2. Modeling:
@@ -64,6 +62,9 @@ For the completion of my natural language processing (NLP) I used several differ
 machine learning models but here I will talk about two in particular:
 -  Naive Bayes
 -  Random Forest
+
+
+### == IN PROGRESS ==
 
 
 #### a. Naïve Bayes
@@ -135,10 +136,12 @@ to predict if a restaurant's review was Veggie Friendly or not.
 vector representations to use in out Machine Learning models. For example, 
 1.  The dog is brown.
 2.  The cat is brown. 
+
 if we remove stopwords we end up with a bag containing [brown, cat, dog] so our
 representations of the sentences would be:
-1.  [1, 0, 1]
-2.  [1, 1, 0]
+\1.  [1, 0, 1]
+\2.  [1, 1, 0]
+
 so you can see as our bag of words gets larger the dimensionality of the problem 
 gets large as well. 
 
