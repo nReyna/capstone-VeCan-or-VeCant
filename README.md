@@ -119,7 +119,7 @@ this project there were dropped as I was interested in only English based text.
 
 The pipeline used to process the review text consisted of
 -  Removing stop words:
-*  This removed words that are typically found in English text such as, 'the', 
+  -  This removed words that are typically found in English text such as, 'the', 
 'a', 'is'... from review text. Also, there are some very passionate reveiwers
 on Yelp so I removed instances of words that did not seem very helpful: 'reeeeally',
 'aaaamazing', 'aaaaaaaaaaaaaaaaaaaamazing'. As one can probably infer having
@@ -127,20 +127,20 @@ words such as these in reviews really only increased my dimensionality when
 it came time to vectorize. There was a total of 357 stopwords I removed from 
 the review text vocabulary. 
 -  Removing numbers:
-*  There were many reviews that had numbered items, or spoke about the menu item
+  -  There were many reviews that had numbered items, or spoke about the menu item
 numbers and some even elaborated on the quantity of dishes enjoyed. For the goal
 that I had in mind numbers did not really seem to offer much signal when trying 
 to predict if a restaurant's review was Veggie Friendly or not.
 -  Vectorizing the review text:
-*  This process entails creating a 'bag of words' from reviews and then creating 
+  -  This process entails creating a 'bag of words' from reviews and then creating 
 vector representations to use in out Machine Learning models. For example, 
 1.  The dog is brown.
 2.  The cat is brown. 
 
 if we remove stopwords we end up with a bag containing [brown, cat, dog] so our
 representations of the sentences would be:
-\1.  [1, 0, 1]
-\2.  [1, 1, 0]
+1.  [1, 0, 1]
+2.  [1, 1, 0]
 
 so you can see as our bag of words gets larger the dimensionality of the problem 
 gets large as well. 
