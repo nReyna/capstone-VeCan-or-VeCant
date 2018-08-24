@@ -84,7 +84,6 @@ machine learning models but here I will talk about two in particular:
 
 ### 3. Appendix: Data Extraction
 **Yelp Dataset SQL Tables**
-
 Thanks to the [Yelp Challenge](https://www.yelp.com/dataset/documentation/sql) data 
 set, I was able to work on this fun NLP problem. However, extracting the data was 
 not very straightforward.
@@ -116,9 +115,8 @@ this project there were dropped as I was interested in only English based text.
 <!--- == === == === == === == === Appendix B === == === == === == === == == --->
 
 ### 4. Appendix: Processing Text
-
-The pipeline used to process the review text consisted of
--  Removing stop words:
+The pipeline used to process the review text consisted of:
+**Removing stop words:**
   -  This removed words that are typically found in English text such as, 'the', 
 'a', 'is'... from review text. Also, there are some very passionate reveiwers
 on Yelp so I removed instances of words that did not seem very helpful: 'reeeeally',
@@ -126,12 +124,12 @@ on Yelp so I removed instances of words that did not seem very helpful: 'reeeeal
 words such as these in reviews really only increased my dimensionality when 
 it came time to vectorize. There was a total of 357 stopwords I removed from 
 the review text vocabulary. 
--  Removing numbers:
+**Removing numbers:**
   -  There were many reviews that had numbered items, or spoke about the menu item
 numbers and some even elaborated on the quantity of dishes enjoyed. For the goal
 that I had in mind numbers did not really seem to offer much signal when trying 
 to predict if a restaurant's review was Veggie Friendly or not.
--  Vectorizing the review text:
+**Vectorizing the review text:**
   -  This process entails creating a 'bag of words' from reviews and then creating 
 vector representations to use in out Machine Learning models. For example, 
 1.  The dog is brown.
