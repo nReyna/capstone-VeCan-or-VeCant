@@ -9,8 +9,9 @@ Your comments and questions are welcome.
 
 1. [Motivation](#1-motivation)
 2. [Modeling](#2-modeling)
-3. [Appendix Data Extraction](#3-appendix-data-extraction)
-4. [Appendix Processing Text](#4-appendix-processing-text)
+3. [Results](#3-results)
+4. [Appendix Data Extraction](#4-appendix-data-extraction)
+5. [Appendix Processing Text](#5-appendix-processing-text)
 <!--- == === == === == === == === == === == === == === == === == === == == --->
 
 ---
@@ -80,9 +81,13 @@ machine learning models but here I will talk about two in particular:
 ![RF Confusion Matrix](/imgs/RF-CountVect-CMat.png)
 ![Random Forest ROC curve](/imgs/RF_357StWds_full_countV_SVD.png)
 
+### 3. Results
+
+### == IN PROGRESS - need to write up ==
+
 <!--- == === == === == === == === Appendix A === == === == === == === == == --->
 
-### 3. Appendix: Data Extraction
+### 4. Appendix: Data Extraction
 **Yelp Dataset SQL Tables**
 Thanks to the [Yelp Challenge](https://www.yelp.com/dataset/documentation/sql) data 
 set, I was able to work on this fun NLP problem. However, extracting the data was 
@@ -114,7 +119,7 @@ this project there were dropped as I was interested in only English based text.
 
 <!--- == === == === == === == === Appendix B === == === == === == === == == --->
 
-### 4. Appendix Processing Text
+### 5. Appendix: Processing Text
 The pipeline used to process the review text consisted of:
 **Removing stop words:**
   -  This removed words that are typically found in English text such as, 'the', 
