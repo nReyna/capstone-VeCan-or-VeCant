@@ -10,9 +10,9 @@ Your comments and questions are welcome.
 1. [Motivation](#1-motivation)
 2. [Goal](#1-goal-classify-businesses-by-their-review-text)
 3. [Modeling](#2-modeling)
-
 0. [Appendix](#0-appendix)
-
+B. Appendix - Processing Text
+[Appendix](#B-appendix-processing-text)
 <!--- == === == === == === == === == === == === == === == === == === == == --->
 
 ---
