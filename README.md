@@ -9,8 +9,8 @@ Your comments and questions are welcome.
 
 1. [Motivation](#1-motivation)
 2. [Modeling](#2-modeling)
-3. [Appendix Data](#3-Appendix-Data-Extraction)
-4. [Appendix Text](#4-Appendix-Processing-Text)
+3. [Appendix Data Extraction](#3-appendix-data-extraction)
+4. [Appendix Processing Text](#4-appendix-processing-text)
 <!--- == === == === == === == === == === == === == === == === == === == == --->
 
 ---
@@ -114,7 +114,7 @@ this project there were dropped as I was interested in only English based text.
 
 <!--- == === == === == === == === Appendix B === == === == === == === == == --->
 
-### 4. Appendix: Processing Text
+### 4. Appendix Processing Text
 The pipeline used to process the review text consisted of:
 **Removing stop words:**
   -  This removed words that are typically found in English text such as, 'the', 
