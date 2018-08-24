@@ -8,9 +8,8 @@ will be held here to share my findings and some example of how I overcome challe
 Your comments and questions are welcome.
 
 1. [Motivation](#1-motivation)
-3. [Modeling](#2-modeling)
-0. [Appendix](#0-appendix)
-[Appendix B.- Processing Text](#4-appendix-processing-text)
+2. [Modeling](#2-modeling)
+3. [Appendix Text](#4-Appendix-Processing-Text)
 <!--- == === == === == === == === == === == === == === == === == === == == --->
 
 ---
@@ -69,7 +68,7 @@ machine learning models but here I will talk about two in particular:
 #### a. Naïve Bayes
 
 ![NB Confusion Matrix](/imgs/MNB-CountVect-CMat.png)
-![Naïve Bayes ROC curve](/imgs/MNB_357StWds_full_countV.png)
+![Naive Bayes ROC curve](/imgs/MNB_357StWds_full_countV.png)
 
 <!--- == === == === == === == === == === == === == === == === == === == == --->
 
