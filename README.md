@@ -10,7 +10,7 @@ Your comments and questions are welcome.
 1. [Motivation](#1-motivation)
 3. [Modeling](#2-modeling)
 0. [Appendix](#0-appendix)
-[Appendix B.- Processing Text](#B-appendix-processing-text)
+[Appendix B.- Processing Text](#4-appendix-processing-text)
 <!--- == === == === == === == === == === == === == === == === == === == == --->
 
 ---
@@ -114,7 +114,7 @@ this project there were dropped as I was interested in only English based text.
 
 <!--- == === == === == === == === Appendix B === == === == === == === == == --->
 
-### B. Appendix - Processing Text
+### 4. Appendix - Processing Text
 
 The pipeline used to process the review text consisted of
 -  Removing stop words:
