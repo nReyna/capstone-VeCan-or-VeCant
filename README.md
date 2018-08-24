@@ -9,7 +9,8 @@ Your comments and questions are welcome.
 
 1. [Motivation](#1-motivation)
 2. [Modeling](#2-modeling)
-3. [Appendix Text](#4-Appendix-Processing-Text)
+3. [Appendix Data](#3-Appendix-Data-Extraction)
+4. [Appendix Text](#4-Appendix-Processing-Text)
 <!--- == === == === == === == === == === == === == === == === == === == == --->
 
 ---
@@ -51,7 +52,7 @@ restaurants we only have about 6%. This raised a flag immediately as most Indian
 restaurants are vegetarian. This also demonstrates the lack of accuracy of the 
 tags on restaurants.
 
-![Class Balance for Veggie Friendly restaurants](/imgs/yelp_dataset_schema.png)
+![Class Balance for Veggie Friendly restaurants](/imgs/CuisinesFull.png)
 Figure 1: Proportion of Veggie Friendly restaruants given a cuisine.
 
 **Balancing Classes**
@@ -80,7 +81,7 @@ machine learning models but here I will talk about two in particular:
 
 <!--- == === == === == === == === Appendix A === == === == === == === == == --->
 
-### A. Appendix - Data Extraction
+### 3. Appendix: Data Extraction
 **Yelp Dataset SQL Tables**
 
 Thanks to the [Yelp Challenge](https://www.yelp.com/dataset/documentation/sql) data 
@@ -113,7 +114,7 @@ this project there were dropped as I was interested in only English based text.
 
 <!--- == === == === == === == === Appendix B === == === == === == === == == --->
 
-### 4. Appendix - Processing Text
+### 4. Appendix: Processing Text
 
 The pipeline used to process the review text consisted of
 -  Removing stop words:
